@@ -85,8 +85,8 @@ Then you do not have to worry about changes to the environment of the current pr
 affecting other projects - you can use different Python versions and different versions of the same third party
 dependency by different projects on your machine independently from one another.
 
-A [good diagram that depicts the use of virtual environments](https://www.dataquest.io/wp-content/uploads/2022/01/python-virtual-envs1.webp) for 
-different Python projects on the same machine is provided by DataQuest.
+We can visualise the use of virtual environments for different Python projects on the same machine as follows:
+![Diagram to depict different Python environments containing different packages on the same machine](episodes/fig/ep05_virtual-env.png){alt='Diagram to depict different Python environments containing different packages on the same machine'}
 
 Another big motivator for using virtual environments is that they make sharing your code with others much easier - 
 as we will see shortly you can record your virtual environment in a special file and share it with your collaborators
