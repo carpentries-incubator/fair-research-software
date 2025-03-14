@@ -9,6 +9,8 @@ type: dataset
 authors:
   - given-names: Sarah
     family-names: Gibson
+  - given-names: Aman
+    family-names: Goel    
   - given-names: Sarah
     family-names: Jaffa
   - given-names: Kamilla
