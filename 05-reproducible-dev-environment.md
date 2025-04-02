@@ -19,7 +19,7 @@ After completing this episode, participants should be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-So far we have created a local Git repository to track changes in our software project and pushed it to GitHub 
+So far we have created a local Git repository to track changes in our software project and pushed it to GitHub
 to enable others to see and contribute to it.
 
 ::: instructor
@@ -29,7 +29,7 @@ https://github.com/carpentries-incubator/astronaut-data-analysis-not-so-fair/tre
 
 :::
 
-We now want to start developing the code further. 
+We now want to start developing the code further.
 If we have a look at our script, we may notice a few `import` lines like the following:
 
 ```python
@@ -81,14 +81,14 @@ allowing isolation from other software projects on your machine that may require
 different versions of Python or external libraries.
 
 It is recommended to create a separate virtual environment for each project.
-Then you do not have to worry about changes to the environment of the current project you are working on 
+Then you do not have to worry about changes to the environment of the current project you are working on
 affecting other projects - you can use different Python versions and different versions of the same third party
 dependency by different projects on your machine independently from one another.
 
 We can visualise the use of virtual environments for different Python projects on the same machine as follows:
 ![Diagram to depict different Python environments containing different packages on the same machine](episodes/fig/ep05_virtual-env.png){alt='Diagram to depict different Python environments containing different packages on the same machine'}
 
-Another big motivator for using virtual environments is that they make sharing your code with others much easier - 
+Another big motivator for using virtual environments is that they make sharing your code with others much easier -
 as we will see shortly you can record your virtual environment in a special file and share it with your collaborators
 who can then recreate the same development environment on their machines.
 
@@ -100,7 +100,7 @@ They also enable you to use a specific older version of a package for your proje
 
 ## Managing virtual environments
 
-There are several command line tools used for managing Python virtual environments - we will use `venv`, 
+There are several command line tools used for managing Python virtual environments - we will use `venv`,
 available by default from the standard `Python` distribution since `Python 3.3`.
 
 Part of managing your (virtual) working environment involves
@@ -212,11 +212,11 @@ we will see how to handle it using Git in one of the subsequent episodes.
 ### Installing external packages
 
 We noticed earlier that our code depends on four **external packages/libraries** -
-`json`, `csv`, `datetime` and `matplotlib`. 
-As of Python 3.5, Python comes with in-built JSON and CSV libraries - this means there is no need to install these 
-additional packages (if you are using a fairly recent version of Python), but you still need to import them in any 
-script that uses them. 
-However, we still need to install packages `datetime` and `matplotlib` as they do not come as standard with 
+`json`, `csv`, `datetime` and `matplotlib`.
+As of Python 3.5, Python comes with in-built JSON and CSV libraries - this means there is no need to install these
+additional packages (if you are using a fairly recent version of Python), but you still need to import them in any
+script that uses them.
+However, we still need to install packages `datetime` and `matplotlib` as they do not come as standard with
 Python distribution.
 
 To install the latest version of packages `datetime` and `matplotlib` with `pip`
@@ -233,7 +233,7 @@ or like this to install multiple packages at once for short:
 (venv_spacewalks) $ python3 -m pip install datetime matplotlib
 ```
 
-The above commands have installed packages `datetime` and `matplotlib` in our currently active `venv_spacewalks` 
+The above commands have installed packages `datetime` and `matplotlib` in our currently active `venv_spacewalks`
 environment and will not affect any other Python projects we may have on our machines.
 
 If you run the `python3 -m pip install` command on a package that is already installed,
@@ -257,7 +257,7 @@ To display information about a particular installed package do:
 Name: matplotlib
 Version: 3.9.0
 Summary: Python plotting package
-Home-page: 
+Home-page:
 Author: John D. Hunter, Michael Droettboom
 Author-email: Unknown <matplotlib-users@python.org>
 License: License agreement for matplotlib versions 1.3.0 and later
@@ -265,7 +265,7 @@ License: License agreement for matplotlib versions 1.3.0 and later
 ...
 Location: /opt/homebrew/lib/python3.11/site-packages
 Requires: contourpy, cycler, fonttools, kiwisolver, numpy, packaging, pillow, pyparsing, python-dateutil
-Required-by: 
+Required-by:
 ```
 
 To list all packages installed with `pip` (in your current virtual environment):
@@ -339,9 +339,9 @@ The `requirements.txt` file can then be committed to a version control system
 (we will see how to do this using Git in a moment)
 and get shipped as part of your software and shared with collaborators and/or users.
 
-Note that you only need to share the small `requirements.txt` file with your collaborators - and not the entire  
-`venv_spacewalks` directory with packages contained in your virtual environment. 
-We need to tell Git to ignore that directory, so it is not tracked and shared - we do this by creating a file 
+Note that you only need to share the small `requirements.txt` file with your collaborators - and not the entire
+`venv_spacewalks` directory with packages contained in your virtual environment.
+We need to tell Git to ignore that directory, so it is not tracked and shared - we do this by creating a file
 `.gitignore` in the root directory of our project and adding a line `venv_spacewalks` to it.
 
 Let's now put `requirements.txt` under version control and share it along with our code.
@@ -352,9 +352,9 @@ Let's now put `requirements.txt` under version control and share it along with o
 (venv_spacewalks) $ git push origin main
 ```
 
-Your collaborators or users of your software can now download your software's source code and replicate the same 
-virtual software environment for running your code on their machines using `requirements.txt` to install all 
-the necessary depending packages. 
+Your collaborators or users of your software can now download your software's source code and replicate the same
+virtual software environment for running your code on their machines using `requirements.txt` to install all
+the necessary depending packages.
 
 To recreate a virtual environment from `requirements.txt`, from the project root one can do the following:
 
@@ -365,7 +365,7 @@ To recreate a virtual environment from `requirements.txt`, from the project root
 As your project grows - you may need to update your environment for a variety of reasons, e.g.:
 
 - one of your project's dependencies has just released a new version (dependency version number update),
-- you need an additional package for data analysis (adding a new dependency), or 
+- you need an additional package for data analysis (adding a new dependency), or
 - you have found a better package and no longer need the older package
 (adding a new and removing an old dependency).
 
@@ -382,8 +382,48 @@ We are now setup to run our code from the newly created virtual environment:
 (venv_spacewalks) $ python3 eva_data_analysis.py
 ```
 
-You should get a pop up window with a graph. 
-Let's inspect the code in a more detail, see if we can understand and improve it.
+You should get a pop up window with a graph.
+However, some (but not all) Windows users will not.
+You might instead see an error like:
+
+```
+Traceback (most recent call last):
+  File "C:\Users\Toaster\Desktop\spacewalks\eva_data_analysis.py", line 30, in <module>
+    w.writerow(data[j].values())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\x92' in position 101: character maps to <undefined>
+(spacewalks) (spacewalks)
+```
+
+This is not what we were expecting!
+The problem is *character encoding*.
+'Standard' Latin characters are encoded using ASCII,
+but the expanded Unicode character set covers many more.
+In this case, the data contains Unicode characters that are represented in the ASCII input file with shortcuts (`Â` as `\u00c2` and `’` as `\u0092`).
+
+When we read the file, Python converts those into the Unicode characters.
+Then by default Windows tries to write out `eva-data.csv` using UTF-7.
+This saves space compared to the standard UTF-8,
+but it doesn't include all of the characters.
+It automatically converts `\u0092` into the shorter `\x92`,
+then discovers that doesn't exist in UTF-7.
+
+The fact that different systems have different defaults,
+which can change or even break your code's behaviour,
+shows why it is so important to make our code's requirements explicit!
+
+We can easily fix this by explicitly telling Python what encoding to use when reading and writing our files:
+
+```
+data_f = open('./eva-data.json', 'r', encoding='ascii')
+data_t = open('./eva-data.csv','w', encoding='utf-8')
+```
+
+Now we have the code running in a virtual environment,
+in the next episode we will inspect it in more detail,
+to see if we can understand and improve it.
 
 ## Further reading
 
@@ -397,8 +437,8 @@ Also check the [full reference set](learners/reference.md#litref) for the course
 :::::: keypoints
 - Virtual environments keep Python versions and dependencies required by different projects separate.
 - A Python virtual environment is itself a directory structure.
-- You can use `venv` to create and manage Python virtual environments, and `pip` to install and manage Python 
+- You can use `venv` to create and manage Python virtual environments, and `pip` to install and manage Python
 external (third-party) libraries.
-- By convention, you can save and export your Python virtual environment in a `requirements.txt` in your project's root 
+- By convention, you can save and export your Python virtual environment in a `requirements.txt` in your project's root
 directory, which can then be shared with collaborators/users and used to replicate your virtual environment elsewhere.
 ::::::
