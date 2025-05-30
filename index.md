@@ -7,7 +7,7 @@ sustainable and [FAIR (Findable, Accessible, Interoperable and Reusable) researc
 to support **open and reproducible research**. 
 The course can be delivered over 2 full or 4 half days.
 
-## Target Audience
+## Target audience
 
 - Post-graduate students, early career researchers or junior Research Software Engineers (RSEs) who are starting their research or software projects, 
 have foundational knowledge of Python, version control and using software tools from command line shell, and want to develop 
@@ -32,7 +32,7 @@ gaining necessary prerequisite skills.
 Please also make sure you have [all the required software](../index.html#setup) installed before attending this course.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Learning Objectives
+## Learning objectives
 
 After attending this training, you **will be able** to:
 
