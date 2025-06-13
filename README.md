@@ -30,17 +30,26 @@ To learn more about how this lesson site is built and how you can edit the pages
 
 ## Author(s)
 
-The list of authors of the course is available in [CITATION.cff](CITATION.cff) (also in [AUTHORS.md](AUTHORS.md)).
+* [Sarah Gibson](https://github.com/sgibson91)
+* [Aman Goel](https://github.com/amangoel185)
+* [Sarah Jaffa](https://github.com/SJaffa)
+* [Kamilla Kopec-Harding](https://github.com/kkh451)
+* [Aleksandra Nenadic](https://github.com/anenadic)
+* [Colin Sauze](https://github.com/colinsauze)
+* [Toby Hodges](https://github.com/tobyhodges)
+* [Sarah Stevens](https://github.com/sstevens2)
 
 ## Maintainer(s)
 
 Current Maintainers of this lesson are:
 
 * [Aleksandra Nenadic](https://github.com/anenadic)
+* [Aman Goel](https://github.com/amangoel185)
+* [Toby Hodges](https://github.com/tobyhodges)
 
 ## Citation
 
-*Aleksandra Nenadic, Kamilla Kopec-Harding, & S Jaffa. (2024). carpentries-incubator/astronaut-data-analysis-fair: alpha-July-2024 (alpha-July-2024). Zenodo. https://doi.org/10.5281/zenodo.12698943*
+*Aleksandra Nenadic, Kamilla Kopec-Harding et al. (2024). carpentries-incubator/astronaut-data-analysis-fair: alpha-July-2024 (alpha-July-2024). Zenodo. https://doi.org/10.5281/zenodo.12698943*
 
 Information on how to cite this work is also available in [CITATION.cff](CITATION.cff).
 

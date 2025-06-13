@@ -2,23 +2,36 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Software practices for open and reproducible research
+title: Building Better Research Software
 message: >-
-  Training material for the "Software practices for open and reproducible research" course
+  Curriculum for the "Building Better Research Software"
+  workshop
 type: dataset
 authors:
   - given-names: Sarah
     family-names: Gibson
   - given-names: Aman
-    family-names: Goel    
+    family-names: Goel
+  - given-names: Toby
+    family-names: Hodges
+    affiliation: The Carpentries
+    orcid: 'https://orcid.org/0000-0003-1766-456X'
   - given-names: Sarah
     family-names: Jaffa
   - given-names: Kamilla
     family-names: Kopec-Harding
   - given-names: Aleksandra
     family-names: Nenadic
+    affiliation: >-
+      Software Sustainability Institute / The University of
+      Manchester
+    orcid: 'https://orcid.org/0000-0002-2269-3894'
   - given-names: Colin
     family-names: Sauze
+  - given-names: Sarah
+    family-names: Stevens
+    affiliation: The University of Wisconsin-Madison
+    orcid: 'https://orcid.org/0000-0002-7040-548X'
 identifiers:
   - type: url
     value: 'https://zenodo.org/records/12666089'
