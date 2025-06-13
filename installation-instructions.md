@@ -1,5 +1,5 @@
 ---
-title: Installation Instructions
+title: Installation instructions
 ---
 
 To go through the course material on your own or at a workshop,
@@ -10,10 +10,11 @@ you will need the following software installed and working correctly on your sys
 - [GitHub account](#github-account)
 - [Python 3](#python-3-distribution)
 - [Visual Studio Code (VS Code)](#visual-studio-code) integrated development environment (IDE)
-- [Astronaut data and analysis code](#astronaut-data-and-analysis-code) which we will be used for exercises in the course
+- [Spacewalks data and analysis code](#spacewalks) which we will be used for exercises in the course
 
 
-## Command Line Terminal
+## Command line terminal
+
 You will need a command line terminal (also referred to as a shell)
 in order to run Python scripts and various command like tools (such as Git and tools that interact with your filesystem).
 
@@ -51,7 +52,7 @@ Macs will use [Zsh (Z shell)](https://www.zsh.org/) as the default command line 
 :::
 
 
-### Testing Command Line Terminal
+### Testing command line terminal
 
 To test your command line terminal, start it up and type:
 
@@ -168,12 +169,12 @@ $ git config --global core.editor "nano -w"
 $ git config --global init.defaultBranch main
 ```
 
-## GitHub Account
+## GitHub account
 
 GitHub is a free, online host for Git repositories that you will use during the course to store your work in so
 you will need to open a free [GitHub](https://github.com/) account unless you do not already have one.
 
-### Configuring GitHub Account
+### Configuring GitHub account
 
 In order to access GitHub using Git from your machine securely,
 you need to set up a way of authenticating yourself with GitHub through Git.
@@ -258,7 +259,7 @@ You may be asked to add GitHub to the list of trusted hosts on your machine (say
 Hi anenadic! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-## Python 3 Distribution
+## Python 3 distribution
 
 You will need Python 3 for this course (note that while Python 2 may work as well, it is not supported by this course).
 You may already have Python 3 installed on your system, in which case you do not have to do anything.
@@ -308,7 +309,7 @@ Integrated Development Environment (IDE) to type and execute Python code and run
 
 Please make sure to [download VS Code](https://code.visualstudio.com/Download) for your platform.
 
-### Command Line Terminal & Git Integration in VS Code
+### Command line terminal & Git integration in VS Code
 
 On macOS and Linux systems, VS Code will typically recognise a command line terminal you already have on your system
 (along with all programs/commands such as Git you can run from it) and you will not need to do anything and
@@ -334,7 +335,7 @@ You can also change the default command line terminal from the same drop down me
 
 ![*Terminal window in VS Code*](episodes/fig/vscode-terminal.png){alt='Terminal window in VS Code with "Select Default Profile" option highlighted'}
 
-### VS Code Extensions for Git
+### VS Code extensions for Git
 
 You could also install the following VS Code extensions (from `View > Extensions` top-level menu)
 to make your Git experience in VS Code better:
@@ -344,14 +345,14 @@ to make your Git experience in VS Code better:
 
 ![*GitLens and Git Graph extensions for VS Code*](fig/vscode-git-extensions.png){ alt-text="GitLens and Git Graph extensions for VS Code" .image-with-shadow }
 
-### Python Integration in VS Code
+### Python integration in VS Code
 
 If you open an existing Python file or create a new blank one (with extension ".py") from VS Code -
 it should recognise it as a Python file already.
 VS Code may ask you to select a Python interpreter if you try to run the file, at which point you should select the
 Python 3 you installed.
 
-### VS Code Extensions for Python
+### VS Code extensions for Python
 
 You should also install the Python extension for VS Code by Microsoft (from `View > Extensions` top-level menu)
 to make your Python experience in VS Code better.
@@ -359,7 +360,7 @@ to make your Python experience in VS Code better.
 ![*Python extension for VS Code by Microsoft*](fig/vscode-python-extension.png){ alt-text="Python extension for VS Code by Microsoft" .image-with-shadow }
 
 
-### VS Code Extensions for Viewing Data
+### VS Code extensions for viewing data
 
 You should install the following extensions for viewing and editing data in VS Code:
 
@@ -369,10 +370,13 @@ You should install the following extensions for viewing and editing data in VS C
 ![*CSV and JSON data editor and viewer extensions for VS Code*](fig/vscode-data-viewer-extensions.png){ alt-text="CSV and JSON data editor and viewer extensions for VS Code" .image-with-shadow }
 
 
-## Astronaut data and analysis code
+## Spacewalks data and analysis code {id="spacewalks"}
 
-Download and save on your machine the [`spacewalks.zip` archive](https://github.com/carpentries-incubator/fair-research-software/raw/refs/heads/main/learners/spacewalks.zip) to be used 
-for code examples and exercises throughout the course.
+As part of the course, you may receive the `spacewalks.zip` archive from your instructors via email, which contains data and code to be used for 
+examples and exercises throughout the course. Alternatively, you can download the [`spacewalks.zip` archive](https://github.com/carpentries-incubator/fair-research-software/raw/refs/heads/main/learners/spacewalks.zip)
+from GitHub.
 
-The `spacewalks.zip` archive contains [NASA's open data on spacewalks](https://data.nasa.gov/Raw-Data/Extra-vehicular-Activity-EVA-US-and-Russia/9kcy-zwvn/data_preview)
+The archive contains [NASA's open data on spacewalks](https://data.nasa.gov/Raw-Data/Extra-vehicular-Activity-EVA-US-and-Russia/9kcy-zwvn/data_preview)
 (i.e. extravehicular activities - EVAs) undertaken by astronauts and cosmonauts from 1965 to 2013 and a Python script to analyse and plot this data.
+
+Save the `spacewalks.zip` archive to your home directory and extract it - you should get a directory called `spacewalks`.

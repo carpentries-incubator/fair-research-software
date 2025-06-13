@@ -61,16 +61,14 @@ contact: 'a.nenadic@software.ac.uk' # FIXME
 episodes: 
 #- writing-content.md
 - 01-introduction.md
-- 02-fair-research-software.md
-- 03-tools-practices.md
-- 04-version-control.md
-- 05-reproducible-dev-environment.md
-- 06-code-readability.md
-- 07-code-structure.md
-- 08-code-correctness-testing.md
-- 09-software-documentation.md
-- 10-open-collaboration.md
-- 11-wrap-up.md
+- 02-better-start-version-control.md
+- 03-reproducible-dev-environment.md
+- 04-code-readability.md
+- 05-code-structure.md
+- 06-code-correctness.md
+- 07-software-documentation.md
+- 08-open-collaboration.md
+- 09-wrap-up.md
 
 # Information for Learners
 learners:
@@ -79,6 +77,7 @@ learners:
 - licensing.md
 - ethical-environmental-considerations.md
 - installation-instructions.md
+- reproducible-research-discussion.md
 
 # Information for Instructors
 instructors: 
